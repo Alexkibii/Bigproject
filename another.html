@@ -1,0 +1,76 @@
+<style>
+    .wel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.wel-left {
+  flex: 1;
+  z-index: 2;
+}
+
+.wel-right {
+  flex: 1;
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50% 50% 0 50%; /* makes a diagonal rounded shape */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  transform: rotate(-10deg); /* diagonal tilt */
+}
+
+.wel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.wel-img:hover {
+  transform: scale(1.1) rotate(0deg); /* zoom in and straighten on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .wel {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-wrapper {
+    width: 80%;
+    height: auto;
+    transform: rotate(0deg);
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+}
+
+
+</style>
+<div class="wel container">
+  <div class="wel-left">
+    <h1 class="welc">Welcome to Eschool</h1>
+    <h2 class="bred">Making quality education accessible to every learner, everywhere.</h2>
+    <p class="welcm">
+      At Eschool we provide high-quality video lessons, concise subject notes, and career resources 
+      that empower students and reward teachers. Our platform is designed to be simple, friendly, 
+      and effective.
+    </p>
+  </div>
+  <div class="wel-right">
+    <div class="image-wrapper">
+      <img src="{{ url_for('static', filename='image.png') }}" class="wel-img">
+    </div>
+  </div>
+</div>
+

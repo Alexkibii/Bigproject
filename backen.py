@@ -5,10 +5,9 @@ app = Flask(__name__)
 @app.route('/intro')
 def intro():
     return render_template('intro.html')
-
 @app.route('/')
 def index():
-     return render_template('intro.html')
+     return render_template('learn.html')
 @app.route('/register')
 def register():
     return render_template('register.html')

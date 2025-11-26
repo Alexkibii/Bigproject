@@ -9,11 +9,7 @@ body, html {
 body {
     margin: 0;
     padding: 0;
-    background-image: url('pexels-katerina-holmes-5905880.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
+    background-color: #374151;
 }
 
 .navbar {
@@ -111,14 +107,28 @@ body {
 }
 /*FOR INTRO.HTML*/
 .pill-container{
-      display:inline-flex;
+    display: inline-flex;
+    background: #f1f5f9;
+    padding: 6px;
+    border-radius: 40px;
+    gap: 6px;
+    align-items: center;
+    margin-top: 65px;
+    margin-left: 400px;
+
+    position: sticky;
+    top: 60px;   
+
+    z-index: 5000;  
+
+      /*display:inline-flex;
       background:#f1f5f9;
       padding:6px;
       border-radius:40px;
       gap:6px;
       align-items:center;
       margin-top: 65px;
-      margin-left: 400px;
+      margin-left: 400px;*/
     }
 
     .pill-btn{
@@ -149,17 +159,63 @@ body {
     }
     .header {
         line-height: 1.5;
+        margin-left: 50px;
+        margin-top: -20px;
+        display: flex;              
+        align-items: center;        
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+    .header-text {
+    max-width: 50%;             
+    line-height: 1.5;
+    margin-top: -20px;
+    font-family: 'Inter', sans-serif;
+}
+.header img {
+    width: 470px;               
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: white;      
+    transition: 0.3s;
+}
+.header img:hover {
+  width: 540px;
+}
+.warm {
+        font-size: 50px;
+        font-family: 'Inter', sans-serif;
+        color: #FFB400; 
     }
     .head {
-        font-size: 50px;
+     font-size: 50px;
         font-family: 'Poppins', sans-se;
         color: #fff;
+        margin-top: -39px;
     }
     .mhead {
-        color: darkblue;
+        color: #1E90FF;
         font-size: 40px;
         font-weight: bold;
         margin-top: -30px;
+        font-family: 'Inter', sans-serif;
+        margin-top: -30px;
+    }
+    .cla {
+        text-decoration: underline;
+        color: #1E90FF;
+    }
+    .par {
+    width: 100%;
+    height: 200px;
+    margin-top: 65px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #6a89a7;
     }
 
 
