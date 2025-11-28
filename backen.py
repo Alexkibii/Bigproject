@@ -6,7 +6,7 @@ app = Flask(__name__)
 def intro():
     return render_template('intro.html')
 @app.route('/')
-def home():
+def learn():
      return render_template('learn.html')
 @app.route('/register')
 def register():
